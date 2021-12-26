@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{A9C86004-0E72-413C-8783-8527FC2F504D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Product/Index.cshtml">
+    <Files>
+      <File FileName="Web.config" Line="18" Column="23" />
+      <File FileName="AccessToken/AccessToken.cs" />
+      <File FileName="Controllers/ProductController.cs" />
+      <File FileName="Views/Product/Index.cshtml" Line="18" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SendInformationDemo" expanded="True">
+            <Node name="SendInformationDemo" expanded="True">
+              <Node name="AccessToken" expanded="True" />
+              <Node name="App_Start" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Product" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SendInformationDemo PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

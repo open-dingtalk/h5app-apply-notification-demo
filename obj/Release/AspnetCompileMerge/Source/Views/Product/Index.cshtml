@@ -1,0 +1,143 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>发送消息</title>
+    <script src="https://g.alicdn.com/dingding/dingtalk-jsapi/2.13.42/dingtalk.open.js"></script>
+</head>
+<body>
+    <ul class="list-group">
+        <li class="list-group-item text-center">姓名：<em id="name"></em></li>
+        <li class="list-group-item text-center">UserId：<em id="userid"></em></li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item text-center"><button class="btn btn-info" id="btnText" onclick="sendText()"><em>发送文本消息</em></button></li>
+        <li class="list-group-item text-center"><button class="btn btn-info" id="btnText" onclick="sendImage()"><em>发送图片消息</em></button></li>
+        <li class="list-group-item text-center"><button class="btn btn-info" id="btnText" onclick="sendMarkdown()"><em>发送Markdown消息</em></button></li>
+        <li class="list-group-item text-center"><button class="btn btn-info" id="btnText" onclick="sendUrl()"><em>发送链接消息</em></button></li>
+    </ul>
+
+    <script type="text/javascript">
+        // 使用钉钉客户端打开，获取当前登录用户信息
+        dd.ready(function () {
+
+            // 获取配置中的CorpId
+            $.ajax({
+                type: "get",
+                url: "/Product/getCorpId",
+                success: function (data) {
+
+                    // 获取免登授权码
+                    dd.runtime.permission.requestAuthCode({
+                        corpId: data, // 企业id
+                        onSuccess: function (info) {
+
+                            // 通过免登授权码获取用户信息
+                            $.ajax({
+                                type: "get",
+                                url: "/Product/getUserByCode",
+                                data: { code: info.code },
+                                dataType: "json",
+                                success: function (data) {
+                                    $("#name").html(data.Name);
+                                    $("#userid").html(data.Userid);
+                                },
+                                error: function () { }
+                            })
+                        },
+                        onFail: function (err) {
+                            alert(JSON.stringify(err))
+                        }
+                    });
+
+                },
+                error: function () { }
+            })
+        });
+
+
+        const sendText = function () {
+            $.ajax({
+                type: "get",
+                url: "/Product/SendText",
+                data: { userId: $("#userid").html() },
+                success: function (data) {
+                    if (data == 1) {
+                        alert("发送成功");
+                    }
+                    else {
+                        alert("发送失败");
+                    }
+
+                },
+                error: function () { }
+
+            })
+        }
+
+        const sendImage = function () {
+            $.ajax({
+                type: "get",
+                url: "/Product/SendImage",
+                data: { userId: $("#userid").html() },
+                success: function (data) {
+                    if (data == 1) {
+                        alert("发送成功");
+                    }
+                    else {
+                        alert("发送失败");
+                    }
+
+                },
+                error: function () { }
+
+            })
+        }
+
+        const sendMarkdown = function () {
+            $.ajax({
+                type: "get",
+                url: "/Product/SendMarkdown",
+                data: { userId: $("#userid").html() },
+                success: function (data) {
+                    if (data == 1) {
+                        alert("发送成功");
+                    }
+                    else {
+                        alert("发送失败");
+                    }
+
+                },
+                error: function () { }
+
+            })
+        }
+
+        const sendUrl = function () {
+            $.ajax({
+                type: "get",
+                url: "/Product/SendUrl",
+                data: { userId: $("#userid").html() },
+                success: function (data) {
+                    if (data == 1) {
+                        alert("发送成功");
+                    }
+                    else {
+                        alert("发送失败");
+                    }
+
+                },
+                error: function () { }
+
+            })
+        }
+    </script>
+</body>
+</html>
