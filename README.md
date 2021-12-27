@@ -83,17 +83,13 @@ git clone https://github.com/open-dingtalk/h5app-apply-notification-demo.git
 
 - 配置地址： ![](https://img.alicdn.com/imgextra/i1/O1CN01IWleEp1Kw0hX9suby_!!6000000001227-2-tps-1408-489.png)
 
-5. 访问页面：浏览器访问临时域名即可
+5. 访问页面：使用移动端钉钉访问应用
 
 ## 5. 页面展示
 
-首页
+首页  ![](https://img.alicdn.com/imgextra/i4/O1CN01XCYSDm1oOyc0tsT0H_!!6000000005216-0-tps-576-1280.jpg)
 
-![](https://img.alicdn.com/imgextra/i4/O1CN01XCYSDm1oOyc0tsT0H_!!6000000005216-0-tps-576-1280.jpg)
-
-消息通知
-
-![](https://img.alicdn.com/imgextra/i2/O1CN01VosOoa1lnIna1tL38_!!6000000004863-2-tps-500-309.png)
+消息通知  ![](https://img.alicdn.com/imgextra/i2/O1CN01VosOoa1lnIna1tL38_!!6000000004863-2-tps-500-309.png)
 
 
 ## 6. 参考文档
