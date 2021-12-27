@@ -87,7 +87,7 @@ git clone https://github.com/open-dingtalk/h5app-apply-notification-demo.git
 
 ## 5. 页面展示
 
-首页  ![](https://img.alicdn.com/imgextra/i4/O1CN01XCYSDm1oOyc0tsT0H_!!6000000005216-0-tps-576-1280.jpg)
+首页  ![](https://img.alicdn.com/imgextra/i4/O1CN01s3Zx3z1YtAsEoBtvw_!!6000000003116-2-tps-399-443.png)
 
 消息通知  ![](https://img.alicdn.com/imgextra/i2/O1CN01VosOoa1lnIna1tL38_!!6000000004863-2-tps-500-309.png)
 
